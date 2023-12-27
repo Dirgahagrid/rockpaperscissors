@@ -1,12 +1,37 @@
-<!DOCTYPE html>
+    <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="javascript.js"></script>
+    <link rel="stylesheet" href="styles.css">
     <title>Rock Paper and Scissors</title>
 </head>
 <body>
-    
+    <div class="container">
+      <h1>Rock, Paper, Scissors</h1>
+        <div class="score">
+            <h2>First to 5 wins! The score is:</h2>
+            <div class="total">
+                <div class="player-side">
+                    <h2>You</h2>
+                    <h2 id="player"></h2>
+                    <h2 id="player-Selection"></h2>
+                </div>
+                <div class="computer-side">
+                    <h2>Computer</h2>
+                    <h2 id="computer"></h2>
+                    <h2 id="computer-Selection"></h2>
+                </div>
+            </div>
+            <div id="message"></div>
+        </div>
+        <div class="selection">
+            <h2>Make your selection below!</h2>
+            <button class="btn" onclick="player(this)" id="rock">Rock</button>
+            <button class="btn" onclick="player(this)" id="paper">Paper</button>
+            <button class="btn" onclick="player(this)" id="scissors">Scissors</button>
+        </div>
+    </div>
 </body>
 </html>
